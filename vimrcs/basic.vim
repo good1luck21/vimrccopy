@@ -75,6 +75,8 @@ if has("win16") || has("win32")
 else
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 endif
+set relativenumber
+set number
 
 " Always show current position
 set ruler
@@ -219,6 +221,8 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+map <leader>sv <C-w>v
+map <leader>sh <C-w>s
 
 " Close the current buffer
 map <leader>bd :Bclose<cr>:tabclose<cr>gT
